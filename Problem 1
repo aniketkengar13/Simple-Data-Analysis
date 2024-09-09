@@ -1,5 +1,4 @@
-"Generating Synthetic Data Set A body of mass 1.0 Kg is moving with constantly incresing velocity in exponential fashion with growth constant 0.01 (1/sec) from initial time t = 1 sec to t = 10 sec. Calculate velocity and Kinetic energy numerically. Using Python programing,tabulate your
-numerical results. Using above numerical data, calculate mean, median, variance, and standard deviation for velocity and kinetic energy of a body"
+# Generating Synthetic Data Set A body of mass 1.0 Kg is moving with constantly incresing velocity in exponential fashion with growth constant 0.01 (1/sec) from initial time t = 1 sec to t = 10 sec. Calculate velocity and Kinetic energy numerically. Using Python programing,tabulate your numerical results. Using above numerical data, calculate mean, median, variance, and standard deviation for velocity and kinetic energy of a body
 
 ==>>>>
 
