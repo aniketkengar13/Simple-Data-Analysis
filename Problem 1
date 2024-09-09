@@ -1,0 +1,41 @@
+"Generating Synthetic Data Set A body of mass 1.0 Kg is moving with constantly incresing velocity in exponential fashion with growth constant 0.01 (1/sec) from initial time t = 1 sec to t = 10 sec. Calculate velocity and Kinetic energy numerically. Using Python programing,tabulate your
+numerical results. Using above numerical data, calculate mean, median, variance, and standard deviation for velocity and kinetic energy of a body"
+
+==>>>>
+
+
+import math
+import pandas as pd
+
+# Given values
+mass = 1.0
+initial_time = 1
+final_time = 10
+growth_constant = 0.01
+
+# Calculate velocity using exponential growth formula
+def calculate_velocity(time):
+    return math.exp(growth_constant * time)
+
+# Calculate kinetic energy
+def calculate_kinetic_energy(velocity):
+    return 0.5 * mass * velocity**2
+
+# Create a DataFrame to store results
+data = {
+    'Time (s)': [],
+    'Velocity (m/s)': [],
+    'Kinetic Energy (J)': []
+}
+
+# Calculate values for each time step
+for t in range(initial_time, final_time + 1):
+    velocity = calculate_velocity(t)
+    kinetic_energy = calculate_kinetic_energy(velocity)
+    data['Time (s)'].append(t)
+    data['Velocity (m/s)'].append(velocity)
+    data['Kinetic Energy (J)'].append(kinetic_energy)
+
+# Create and display the DataFrame
+df = pd.DataFrame(data)
+print(df)
